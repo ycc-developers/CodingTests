@@ -1,0 +1,3 @@
+function solve(compressed) {
+    return "";
+}

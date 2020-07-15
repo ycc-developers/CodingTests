@@ -1,26 +1,30 @@
 package com.ycc.juseong;
 
-import com.ycc.beomseok.Solution1;
+import com.ycc.JavaScriptConverter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class Solution1Tests {
-    private Solution1 solution1;
+import javax.script.ScriptException;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class Solution1JsTests {
+    private JavaScriptConverter converter;
 
     @BeforeEach
-    public void prepareTest() {
-        solution1 = new Solution1();
+    public void prepareTest() throws FileNotFoundException, ScriptException {
+        converter = new JavaScriptConverter("src/main/java/com/ycc/juseong/Solution1.js");
     }
 
     @Test
-    public void given_케이스1_then_성공() {
+    public void given_케이스1_then_성공() throws ScriptException, NoSuchMethodException {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = "";
 
         //WHEN - 실제 로직 수행
-        String actualResultValue = solution1.solve(preparedTestValue);
+        String actualResultValue = converter.invoke("solve", preparedTestValue);
         System.out.println("test : " + actualResultValue);
 
         //THEN - 결과 비교
@@ -28,13 +32,13 @@ public class Solution1Tests {
     }
 
     @Test
-    public void given_케이스2_then_실패() {
+    public void given_케이스2_then_실패() throws ScriptException, NoSuchMethodException {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = ";";
 
         //WHEN - 실제 로직 수행
-        String actualResultValue = solution1.solve(preparedTestValue);
+        String actualResultValue = converter.invoke("solve", preparedTestValue);
         System.out.println("test : " + actualResultValue);
 
         //THEN - 결과 비교
