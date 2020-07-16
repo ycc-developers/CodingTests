@@ -1,4 +1,4 @@
-package com.ycc.juseong;
+package com.ycc.jusung;
 
 import com.ycc.JavaScriptConverter;
 import org.junit.jupiter.api.Assertions;
@@ -14,7 +14,7 @@ public class Solution1JsTests {
 
     @BeforeEach
     public void prepareTest() throws FileNotFoundException, ScriptException {
-        converter = new JavaScriptConverter("src/main/java/com/ycc/juseong/Solution1.js");
+        converter = new JavaScriptConverter("src/main/java/com/ycc/jusung/Solution1.js");
     }
 
     @Test
