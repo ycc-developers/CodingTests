@@ -18,7 +18,7 @@ public class Solution1JsTests {
     }
 
     @Test
-    public void given_케이스1_then_성공() throws ScriptException, NoSuchMethodException {
+    public void given_case1_then_succes() throws ScriptException, NoSuchMethodException {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = "";
@@ -32,7 +32,7 @@ public class Solution1JsTests {
     }
 
     @Test
-    public void given_케이스2_then_실패() throws ScriptException, NoSuchMethodException {
+    public void given_case2_then_fail() throws ScriptException, NoSuchMethodException {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = ";";

@@ -14,7 +14,7 @@ public class Solution1Tests {
     }
 
     @Test
-    public void given_케이스1_then_성공() {
+    public void given_case1_then_succes() {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = "";
@@ -28,7 +28,7 @@ public class Solution1Tests {
     }
 
     @Test
-    public void given_케이스2_then_실패() {
+    public void given_case2_then_fail() {
         //GIVEN - 테스트케이스, 결과기댓값 준비
         String preparedTestValue = "TestValue";
         String expectedResultValue = ";";
