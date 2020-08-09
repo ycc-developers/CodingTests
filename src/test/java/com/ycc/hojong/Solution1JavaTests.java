@@ -1,11 +1,10 @@
 package com.ycc.hojong;
 
-import com.ycc.beomseok.Solution1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class Solution1JavaTests {
+public class Solution1JavaTests extends Thread {
     private Solution1 solution1;
 
     @BeforeEach
@@ -14,13 +13,13 @@ public class Solution1JavaTests {
     }
 
     @Test
-    public void given_case1_then_succes() {
+    public void given_xababcdcdababcdcd_then_17() {
         //GIVEN - 테스트케이스, 결과기댓값 준비
-        String preparedTestValue = "TestValue";
-        String expectedResultValue = "";
+        String preparedTestValue = "xababcdcdababcdcd";
+        int expectedResultValue = 17;
 
         //WHEN - 실제 로직 수행
-        String actualResultValue = solution1.solve(preparedTestValue);
+        int actualResultValue = solution1.solve(preparedTestValue);
         System.out.println("test : " + actualResultValue);
 
         //THEN - 결과 비교
@@ -28,16 +27,199 @@ public class Solution1JavaTests {
     }
 
     @Test
-    public void given_case2_then_fail() {
+    public void given_abcabcdede_then_8() {
         //GIVEN - 테스트케이스, 결과기댓값 준비
-        String preparedTestValue = "TestValue";
-        String expectedResultValue = ";";
+        String preparedTestValue = "abcabcdede";
+        int expectedResultValue = 8;
 
         //WHEN - 실제 로직 수행
-        String actualResultValue = solution1.solve(preparedTestValue);
+        int actualResultValue = solution1.solve(preparedTestValue);
         System.out.println("test : " + actualResultValue);
 
         //THEN - 결과 비교
-        Assertions.assertNotEquals(expectedResultValue, actualResultValue);
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
     }
+
+    @Test
+    public void given_ababcdcdababcdcd_then_9() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "ababcdcdababcdcd";
+        int expectedResultValue = 9;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_aabbaccc_then_7() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "aabbaccc";
+        int expectedResultValue = 7;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_abcabcabcabcdededededede_then_14() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "abcabcabcabcdededededede";
+        int expectedResultValue = 14;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_abcdefghijklmnopqrstuvwxyz_then_26() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "abcdefghijklmnopqrstuvwxyz";
+        int expectedResultValue = 26;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_aaaaaaaaaaaaaaa_then_3() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "aaaaaaaaaaaaaaa";
+        int expectedResultValue = 3;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_aabbbaaccccddddd_then_10() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "aabbbaaccccddddd";
+        int expectedResultValue = 10;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_abcdefghabcdefg_then_15() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "abcdefghabcdefg";
+        int expectedResultValue = 15;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_aabbbaccccccdddd_then_9() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "aabbbaccccccdddd";
+        int expectedResultValue = 9;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_baabaababa_then_8() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "baabaababa";
+        int expectedResultValue = 8;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_ababcdfgcdfg_then_9() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "ababcdfgcdfg";
+        int expectedResultValue = 9;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_ababacdcdcd_then_9() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "ababacdcdcd";
+        int expectedResultValue = 9;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_aiaaiaaai_then_7() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "aiaaiaaai";
+        int expectedResultValue = 7;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
+    @Test
+    public void given_ziz_then_3() {
+        //GIVEN - 테스트케이스, 결과기댓값 준비
+        String preparedTestValue = "ziz";
+        int expectedResultValue = 3;
+
+        //WHEN - 실제 로직 수행
+        int actualResultValue = solution1.solve(preparedTestValue);
+        System.out.println("test : " + actualResultValue);
+
+        //THEN - 결과 비교
+        Assertions.assertEquals(expectedResultValue, actualResultValue);
+    }
+
 }
