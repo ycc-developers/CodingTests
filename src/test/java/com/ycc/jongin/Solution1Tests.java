@@ -1,6 +1,5 @@
 package com.ycc.jongin;
 
-import com.ycc.beomseok.Solution1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
